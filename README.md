@@ -5,4 +5,4 @@ run `bazel build :bundle` - build will fail due to unresolved module.
 
 you can still make the build succeed by commenting out the throw in `rollup.config.js`, but then the bundle outputted by rollup will treat HelloWorld as an external module and will leave it as an import in the bundle.
 
-There's a hack-fix plugin in `rollup.config.js` (currently commented out). However, this fix references bazel sandbox folders.
+There's also a hack-fix in `rollup.config.js` as a plugin (currently commented out). However, this fix references bazel sandbox folders.
