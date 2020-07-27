@@ -16,7 +16,7 @@ module.exports = {
 //           const k8Folder = "k8-fastbuild"; // might be different on your system, e.g. "k8-opt"
 //           return { id: `bazel-out/${k8Folder}/bin/${importPath}.mjs`, external: false };
 //         }
-//         return null;
+//         return null; // default resolution
 //       },
 //     },
 //   ],
