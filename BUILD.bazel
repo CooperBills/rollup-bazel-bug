@@ -9,10 +9,11 @@ exports_files(["tsconfig.json"], visibility = ["//:__subpackages__"])
 
 load("@npm//@bazel/typescript:index.bzl", "ts_library")
 load("@npm//@bazel/rollup:index.bzl", "rollup_bundle")
+load("@build_bazel_rules_nodejs//:index.bzl", "pkg_npm")
 
 
 ts_library(
-    name = "helLo_world",
+    name = "hello_world",
     srcs = ["HelloWorld.ts"],
 )
 
@@ -31,4 +32,9 @@ rollup_bundle(
     deps = [
         ":bundle_entry",
     ],
+)
+
+pkg_npm(
+    name = "my_workspace_pkg",
+    package_name = "my_workspace",
 )
