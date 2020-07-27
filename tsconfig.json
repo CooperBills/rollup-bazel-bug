@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "my_workspace/*": ["*"]
+    },
+    "esModuleInterop": true
+  }
+}
